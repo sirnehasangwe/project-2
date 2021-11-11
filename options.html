@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="test.html">
+</head>
+  <body>
+    <h1>Access status:</h1>
+	<p id="msg"></p>
+<div>
+	<script>
+		 var userPreference;
+
+		if (Prompt("Okay so you're about to see some serious internet magic, are you ready?") == true) {
+			userPreference = "You're free to go on";
+		} else {
+			userPreference = "Save Canceled!";
+		}
+
+		document.getElementById("msg").innerHTML = userPreference;
+
+    </script>
+  </div>
+  <div>
+    <script>
+  		 var userPreference;
+
+  		if (confirm("are you SURE you want to see this? What if you hate it?") == true) {
+  			userPreference = "move aling then...";
+  		} else {
+  			userPreference = "Save Canceled!";
+  		}
+
+  		document.getElementById("msg").innerHTML = userPreference;
+
+      </script>
+      <script>
+    		 var userPreference;
+
+    		if (confirm("But then again what if you love it? Do you want to take that chance?") == true) {
+    			userPreference = "You're free to go";
+    		} else {
+    			userPreference = "Save Canceled!";
+    		}
+
+    		document.getElementById("msg").innerHTML = userPreference;
+
+        </script>
+        <script>
+      		 var userPreference;
+
+      		if (confirm("What if it's not what you want? Are you going to keep going?") == true) {
+      			userPreference = "You're free to go";
+      		} else {
+      			userPreference = "Save Canceled!";
+      		}
+
+      		document.getElementById("msg").innerHTML = userPreference;
+
+          </script>
+          <script>
+        		 var userPreference;
+
+        		if (confirm("Do you wish to continue?") == true) {
+        			userPreference = "You're free to go";
+        		} else {
+        			userPreference = "Save Canceled!";
+        		}
+
+        		document.getElementById("msg").innerHTML = userPreference;
+
+            </script>
+            <script>
+               var userPreference;
+
+              if (confirm("I want to give you an opprotunitiy to turn back now, are you gonna take it?") == true) {
+                userPreference = "You're free to go";
+              } else {
+                userPreference = "Save Canceled!";
+              }
+
+              document.getElementById("msg").innerHTML = userPreference;
+              alert(Date()); // display current date
+
+              </script>
+
+    </div>
+    <!-- <div>
+      From text: <input id="fromField" type="text" />
+      To text: <input id="toField" type="text" />
+      <button type="button" id="button">Set text</button>
+    </div>
+
+
+  <label for="yes_no_radio">Do you wish to continue?</label>
+<p>
+<input type="radio" name="yes_no" checked>Yes</input>
+</p>
+<p>
+<input type="radio" name="yes_no">No</input>
+</p> -->
+
+<!-- <div>
+  <button id=“yourOwnID”></button>
+</div> -->
+</body>
+</html>
+<html>
+<style>
+.horizontally {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: yellow;
+  color: orange;
+  border: 1px solid orange;
+}
+.horizontally p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(50%);
+  -webkit-transform:translateX(50%);
+  transform:translateX(50%);
+  /* Apply animation to this element */
+  -moz-animation: horizontally 5s linear infinite alternate;
+  -webkit-animation: horizontally 5s linear infinite alternate;
+  animation: horizontally 5s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes horizontally {
+  0%   { -moz-transform: translateX(50%); }
+  100% { -moz-transform: translateX(-50%); }
+}
+@-webkit-keyframes horizontally {
+  0%   { -webkit-transform: translateX(50%); }
+  100% { -webkit-transform: translateX(-50%); }
+}
+@keyframes horizontally {
+  0%   {
+    -moz-transform: translateX(50%); /* Browser bug fix */
+    -webkit-transform: translateX(50%); /* Browser bug fix */
+    transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%); /* Browser bug fix */
+    -webkit-transform: translateX(-50%); /* Browser bug fix */
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+<div class="horizontally">
+<p>THE INTERNET CAN BE A VERY STRESSSSFUL PLACE!</p>
+</div>
+</html>

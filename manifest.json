@@ -1,17 +1,30 @@
 {
   "manifest_version": 2,
-  "name": "PROJECT NAME",
-  "description": "PROJECT DESCRIPTION",
+  "name": "Sweating the little stuff",
+  "description": "A slight nudge to help you descided if you really want to see what the internt has to offer. Also just a subtle reminder of how truly violating the internet is when it comes to task completion.",
   "version": "0.1",
-  "content_scripts": [
+  "permissions":["storage"],
+  "web_accessible_resources": [
+		"media/*"
+	],
+  "content_scripts":
+  [
     {
       "matches": [
-        "*://*/*"
+        "*://*/*",
+        "file://*"
       ],
       "js": [
-        "content.js"
+        "secondattempt-content.js"
       ],
       "run_at": "document_end"
     }
-  ]
-}
+   ],
+
+     "options_page": "options.html",
+     "icons": {
+
+     "128": "images/icon.png"
+   }
+
+ }
